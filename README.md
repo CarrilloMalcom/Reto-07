@@ -38,6 +38,7 @@ flowchart TD
     E -->|Falso|L[/imprimir i/]
     L -->M[i=i+2]
     M -->D
+    D -->|No|N([Fin])
 ```
 
 ``` python
@@ -70,6 +71,7 @@ flowchart TD
     F -->|Si|H
     H-->I[i=i-2]
     I-->E
+    E -->|No|J([Fin])
 ```
 
  ``` python
